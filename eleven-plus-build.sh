@@ -12,7 +12,7 @@ repo init -u $MANIFEST_URL -b $BRANCH-plus
 repo sync --force-sync -c -q --no-tag --no-clone-bundle --optimized-fetch --current-branch -f -j16 || exit 0
 
 git clone $ORG_URL/device_xiaomi_ginkgo -b $BRANCH device/xiaomi/ginkgo
-git clone $ORG_URL/kernel_xiaomi_ginkgo -b $BRANCH kernel/xiaomi/ginkgo
+git clone https://github.com/ginkgo-dev/android_kernel_xiaomi_ginkgo -b lineage-18.1 kernel/xiaomi/ginkgo
 git clone $ORG_URL/vendor_xiaomi_ginkgo -b $BRANCH vendor/xiaomi/ginkgo
 git clone $ORG_URL/prebuilts_clang_host_linux-x86_clang-sdllvm -b $BRANCH prebuilts/clang/host/linux-x86/clang-sdllvm
 
